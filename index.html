@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+            font-family: "Nanum Gothic", sans-serif;
+            color: #555555;
+        }
+
+        .con{
+            display: flex;
+
+        }
+
+        .a{
+            width: 50vw;
+            height: 100vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .b{
+            width: 50vw;
+            height: 100vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 100px;
+        }
+
+        .bbox{
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            gap: 120px;
+
+            height: 742px;
+        }
+
+        .imgbox{
+            display: flex;
+            gap: 20px;
+        }
+
+        .imgbox img{
+            width: 20%;
+        }
+
+        .imgbox img:hover{
+            transform: scale(1.1);
+            transition: all 0.3s ease;
+        }
+
+        .imgoption h1{
+            margin-bottom: 24px;
+        }
+
+        .text2{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .header{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card{
+            width: 530px;
+            height: 742px;
+
+            border: 1px solid #c2c2c2 ;
+            box-shadow: 0 3px 6px rgba(163, 163, 163, 0.16), 0 3px 6px rgba(0,0,0,0.23);
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            padding: 40px;
+        }
+
+        .card:hover{
+            transform: scale(1.1);
+            transition: all 0.3s ease;
+        }
+
+        .option{
+            width: 268px;
+            min-width: 20%;
+            display: flex;
+            flex-flow: column;
+        }
+
+        .optionbox{
+            height: 50%;
+            display: flex;
+            flex-flow: column;
+            gap: 20px
+        }
+
+        .optionbox h2{
+            margin-bottom: 24px;
+            font-size: 28px;
+        }
+
+
+        input{
+            background: transparent; 
+            border: none;
+            outline: none;  
+        }
+
+        .style{
+            background-color: #efefef;
+            padding: 8px 12px;
+            border-radius: 12px;
+        }
+
+        .option label{
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+
+        .profile{
+            display: flex;
+        }
+
+        .profileicon img{
+            border-radius: 20px;
+            margin-right: 8px;
+        }
+
+        .textbox{
+            padding-bottom: 20px;
+        }
+
+        .text2{
+            padding-top: 12px;
+        }
+    </style>
+</head>
+<body>  
+    <div class="con">
+
+        <div class="a">
+
+            <div class="card">
+
+                <div class="header">
+
+                    <div class="profile">
+                        <div class="profileicon">
+                            <img src="profileicon.jpg" width="24px" alt="">
+                        </div>
+                        <h3 class="namefill">홍길동</h3>
+                    </div>
+
+                    <img src="menuicon.png" width="26px" alt="">
+
+                </div>
+
+                <div class="mainimg">
+                    <img src="img1.png" width="100%" alt="">
+                </div>
+
+                <div class="textbox">
+
+                    <div class="icon">
+                        <img src="like.png" width="26px" alt="">
+                        <img src="chat.png" width="26px" alt="">
+                        <img src="share.png" width="26px" alt="">
+                    </div>
+
+                    <div class="text">
+                            <p1>124 likes</p1>
+                            <div class="text2">
+                            <h3 class="detailfill">과제가 너무 재밌어요!</h3>
+                            <h3 class="datefill">2024년 5월 8일</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="b">
+
+            <div class="bbox">
+
+            <div class="imgoption">
+                <h1>사진을 골라주세요.</h1> 
+                <div class="imgbox">
+                    <img class="imgop1" src="img1.png">
+                    <img class="imgop2" src="img2.png">
+                    <img class="imgop3" src="img3.png">
+                    <img class="imgop4" src="img4.png">
+                </div>
+            </div>
+
+
+            <div class="optionbox">
+
+                <h2>아래 빈칸을 채워주세요.</h2>
+
+                <div class="option">
+                    <label>이름을 적어주세요.</label>
+                    <div class="style">
+                    <input class="name" type="text" placeholder="홍길동" style="font-size: 18px;">
+                    </div>
+                </div>
+
+                <div class="option">
+                    <label>하고 싶은 말을 적어주세요.</label>
+                    <div class="style">
+                    <input class="detail" type="text" placeholder="과제가 너무 재밌어요!" style="font-size: 18px;">
+                    </div>
+                </div>
+
+                <div class="option">
+                    <label>날짜를 적어주세요.</label>
+                    <div class="style">
+                    <input class="date" type="text" placeholder="2024년 5월 8일" style="font-size: 18px;">
+                    </div>
+                </div>
+
+                <div class="option">
+                    <label>크기를 조절할 수 있어요.</label>
+                    <input class="imgsize" type="range" min="0.8" max="1.2" step="0.05">
+                </div>
+
+            </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+
+    <script>
+
+        const imgop1Tag = document.querySelector(".imgbox .imgop1")
+        const imgop2Tag = document.querySelector(".imgbox .imgop2")
+        const imgop3Tag = document.querySelector(".imgbox .imgop3")
+        const imgop4Tag = document.querySelector(".imgbox .imgop4")
+
+        const mainimgTag = document.querySelector(".mainimg img")
+
+        const nameTag = document.querySelector(".option .name")
+        const detailTag = document.querySelector(".option .detail")
+        const dateTag = document.querySelector(".option .date")
+
+        const namefillTag = document.querySelector(".profile .namefill")
+        const datefillTag = document.querySelector(".text .datefill")
+        const detailfillTag = document.querySelector(".text .detailfill")
+
+        const sizeTag = document.querySelector(".option .imgsize")
+        const cardTag = document.querySelector(".card")
+
+        imgop1Tag.addEventListener("click" , function(){
+            mainimgTag.src = "img1.png"
+        })
+
+        imgop2Tag.addEventListener("click" , function(){
+            mainimgTag.src = "img2.png"
+        })
+
+        imgop3Tag.addEventListener("click" , function(){
+            mainimgTag.src = "img3.png"
+        })
+
+        imgop4Tag.addEventListener("click" , function(){
+            mainimgTag.src = "img4.png"
+        })
+
+        nameTag.addEventListener("input" , function(){
+            namefillTag.innerHTML = nameTag.value
+        })
+        
+        dateTag.addEventListener("input" , function(){
+            datefillTag.innerHTML = dateTag.value
+        })
+
+        detailTag.addEventListener("input" , function(){
+            detailfillTag.innerHTML = detailTag.value
+        })
+
+        sizeTag.addEventListener("input" , function(){
+            cardTag.style.transform = 'scale(' + sizeTag.value + ')';
+        })
+    </script>
+</body>
+</html>
