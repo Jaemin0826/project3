@@ -145,11 +145,22 @@
         }
 
         .textbox{
-            padding-bottom: 20px;
+            padding-bottom: 50px;
         }
 
         .text2{
             padding-top: 12px;
+        }
+
+        .datefill{
+            font-size: 12px;
+            color: #888888;
+        }
+
+        .icon{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
         }
     </style>
 </head>
@@ -180,16 +191,18 @@
                 <div class="textbox">
 
                     <div class="icon">
+                        <div class="iconbox">
                         <img src="like.png" width="26px" alt="">
                         <img src="chat.png" width="26px" alt="">
                         <img src="share.png" width="26px" alt="">
+                        </div>
+                        <h3 class="datefill">2024년 5월 8일</h3>
                     </div>
 
                     <div class="text">
                             <p1>124 likes</p1>
                             <div class="text2">
                             <h3 class="detailfill">과제가 너무 재밌어요!</h3>
-                            <h3 class="datefill">2024년 5월 8일</h3>
                         </div>
                     </div>
 
@@ -266,7 +279,7 @@
         const dateTag = document.querySelector(".option .date")
 
         const namefillTag = document.querySelector(".profile .namefill")
-        const datefillTag = document.querySelector(".text .datefill")
+        const datefillTag = document.querySelector(".icon .datefill")
         const detailfillTag = document.querySelector(".text .detailfill")
 
         const sizeTag = document.querySelector(".option .imgsize")
